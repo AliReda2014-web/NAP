@@ -143,7 +143,7 @@ function renderUI(){
     document.querySelector('#searchAndSort').style.display = "none"
     document.querySelector('#sorting').style.display = "none"
     document.querySelector("#infoPage").style.display = "block"
-    msg.style.display = "none"
+    msg.style.display = "none";
   }
 }
 function noteJoin(id){
@@ -284,3 +284,22 @@ document.querySelector("#info").addEventListener("click", () => {
     renderUI()
   }
 })
+document.querySelector("#themes").addEventListener("change", (e) => {
+  theme(e.target.value)
+})
+function htmlStyle(name,value) {
+  document.documentElement.style.setProperty(name,value)
+}
+function theme(theme) {
+  if (theme === "red") {
+    htmlStyle("--bg", "white")
+    htmlStyle("--text-color", "black")
+    htmlStyle("--bgBtns", "#ff7777")
+    htmlStyle("--brClr", "black")
+  } else if (theme === "dark") {
+    htmlStyle("--bg", "black")
+    htmlStyle("--text-color", "white")
+    htmlStyle("--bgBtns", "#222222")
+    htmlStyle("--brClr", "white")
+  }
+      }
