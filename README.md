@@ -8,4 +8,6 @@
 - HTML
 - CSS
 - Vanilla JS
-- Local Storage 
+- Local Storage
+### رابط التشغيل ###
+https://notesapparabic.netlify.app
