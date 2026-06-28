@@ -1,2 +1,11 @@
-# NAP
-Arabic Notes App is a fast notes app that can help you organize your notes using HTML,CSS,Vanilla JS.
+# NAP - Notes App Pro #
+## تطبيق ملاحظات بسيط وسريع ##
+### ما هو NAP? ###
+**NAP** هو موقع ملاحظات بسيط وسريع تم بناءه أولًا كمشروع برمجي ثم تطور لاحقًا لموقع ملاحظات.
+### المطور ###
+تم تطوير الموقع بواسطة المبرمج المصري **علي رضا**.
+### التوكنولوجيا المستخدمة ###
+- HTML
+- CSS
+- Vanilla JS
+- Local Storage 
