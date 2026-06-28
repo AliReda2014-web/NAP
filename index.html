@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+  <title>NAP</title>
+</head>
+<body>
+  <header>
+    <h2 id="appTitle">  NAP </h2>
+    <button id="info">!</button>
+  </header>
+  <div id="searchAndSort">
+      <input id="searchBar" placeholder="ابحث عن الملاحظة"/>
+  </div>
+  <div id="sorting">
+      <select id="sort">
+        <option value="newestFirst">الأحدث أولًا</option>
+         <option value="oldestFirst" selected>الأقدم أولًا</option>
+         <option value="lengthFirst">الأطول أولًا</option>
+      </select>
+      <select id="colors">
+        <option value="red" id="red">الأحمر</option>
+        <option value="blue">الأزرق</option>
+        <option value="green">الأخضر</option>
+       <option value="yellow">الأصفر</option>
+       <option value="" selected>الكل</option>
+      </select>
+      <select id="tagsSelect">
+      </select>
+  </div>
+  <div id="noteLists">
+    <button id="addNote">+</button>
+    <div id="notes">
+    </div>
+  </div>
+  <div id="noteAdding">
+    <input id="title" placeholder="عنوان الملاحظة"/>
+    <input type="text" id="tags" placeholder="الوسوم افصلهم ب،"/>
+    <textarea id="conInpStart" placeholder="محتوى الملاحظة"></textarea>
+    <button id="done">✔️</button>
+  </div>
+  <h5 id="msg"></h5>
+  <div id="notePage">
+    <h2 id="noteTitle"></h2>
+    <h5 id="noteDate"></h5>
+    <h5 id="noteLastEdit"></h5>
+    <h5 id="tagsElement">الوسوم:</h5>
+    <p id="noteContent"></p>
+    <button class="editButton" id="editBtn">✏️</button>
+    <button class="editButton" id="delete">❌</button>
+    <button class="editButton" id="pinBtn">📌</button>
+    <button class="editButton" id="passBtn">🔒</button>
+    <button class="editButton" id="back">←</button>
+    <select id="bgClrs">
+      <option value="white" selected>لا خلفية</option>
+      <option value="red">الأحمر</option>
+      <option value="yellow">الأصفر</option>
+      <option value="blue">الأزرق</option>
+      <option value="green">الأخضر</option>
+    </select>
+    <button id="settingOpen">⚙️</button>
+  </div>
+  <div id="infoPage">
+    <h3> معلومات الموقع </h3>
+    <h4> ما هو NAP </h4>
+    <p> هو تطبيق ملاحظات عربي بسيط تم صنعه أولًا كمشروع برمجي ثم تطور لاحقًا لموقع ملاحظات بسيط وسريع يساعدك على تنظيم ملاحظاتك. </p>
+    <h4>المطور</h4>
+    <p>تم تطوير الموقع بواسطة المبرمج المصري علي رضا .</p>
+    <h4>التكنولوجيا المستخدمة</h4>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>Vanilla JS</li>
+      <li>Local Storage</li>
+    </ul>
+    <h4>الاصدار</h4>
+    <p>NAP v1.0</p>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
